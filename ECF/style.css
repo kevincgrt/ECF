@@ -1,0 +1,506 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+.logo{/* logo dans le menu */
+    display: flex;
+    color: black;
+    height: 50px;
+    margin-right: 33%;
+}
+
+li{
+    list-style: none;
+}
+
+.reseaux li{
+    display: inline-block;
+    width: 10%;
+    padding-top: 30px;
+}
+
+#facebook{
+    margin-left: 35%;
+}
+
+.menu{
+    position: fixed;
+    z-index: 10;
+    padding: 25px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+	display: flex;
+    align-content: center;
+}
+
+.menu li{/* li menu */
+    padding-left: 80px;
+    display: inline-block;   
+}
+
+.menu li a{/* li menu */
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 3;
+    text-decoration: none;
+    color: rgb(30, 29, 29);
+}
+
+.li1 a:hover{/* li menu */
+    color: #f7b85c;
+    border-bottom: #f7b85c solid 2px;
+    padding-bottom: 10px;
+}
+
+.li2 a:hover{/* li menu */
+    color: #db545a;
+    border-bottom: #db545a solid 2px;
+    padding-bottom: 10px;
+}
+
+.li3 a:hover{/* li menu */
+    color: #db545a;
+    border-bottom: #db545a solid 2px;
+    padding-bottom: 10px;
+}
+
+.float{/* background de ma zone de float */
+    background-image: url(./images/test1.jpg);
+}
+
+h1{/* Daily Kitchen */
+    font-family: 'Lobster', cursive;
+    color: white;
+    text-align: center;
+    font-size: 75px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    padding-bottom: 25%;
+}
+
+h2{/* "Decouvrez" */
+    font-family: 'Lobster', cursive;
+    color: #db545a;
+    text-align: center;
+    padding-top: 150px;
+    font-size: 50px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.button{/* boutton dans la zone de float */
+    background-color: #db545a;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    border: none;
+    width: 170px;
+    height: 50px;
+    border-radius: 36px;
+}
+
+.button:hover{
+    background-color: #e68387;
+    cursor: pointer;
+}
+
+#arrow{/* petite fleche dans le bouton */
+    width: 15px;
+    padding-right: 5px;
+}
+
+.divb{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+
+
+/* A FAIRE ATTENTION PENDANT LE RESPONSIVE !!!! */
+
+p{
+    color: white;
+    padding-right: 12%;
+    font-size: 22px;
+    margin-left: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.couverts{
+    width: 20px;
+    color: white;
+}
+
+h3{
+    padding-right: 5%;
+    color: white;
+    margin-left: 50px;
+    font-size: 85px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 50px;
+}
+
+h4{
+    text-align: center;
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 28px;
+    font-weight: 100;
+}
+
+#container{
+    background-color: #ffffff;
+    height: 870px;
+}
+
+#container1{
+    position: relative;
+    margin-top: 50px;
+    margin-left: 27%;
+    margin-right: 15%;
+    display: grid;
+    height: 78%;
+    background-color: #f7b85c;
+    z-index: 1;
+    
+}
+#container2{
+    position: relative;
+    margin-left: 10%;
+    margin-top: 3%;
+    position: absolute;
+    display: grid;
+    height: 80%;
+    width: 35%;
+    background-image: url(./images/resize2.jpg);
+    z-index: 3;
+}
+#container3{
+    position: relative;
+    display: grid;
+    margin-top: 57px;
+    height: 85%;
+    width: 55%;
+    margin-left: 30%;
+
+    background-color: #db545a;
+    z-index: 2;
+}
+
+#container4{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    margin-left: 57%;
+    margin-top: 30px;
+}
+
+#hcontainer4{
+    color: black;
+    font-family: 'Lobster', cursive;
+}
+
+footer{
+    background-image: url(./images/mahmoud-fawzy-MgvByrhYz24-unsplash.jpg);
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding-top:20px;
+    padding-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 100px;
+}
+
+#footer{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+#footer1{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+#footer2{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* Sidenav menu */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+  }
+  
+  .sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Sidenav menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #111;
+  }
+  
+  /* Active class */
+  .sidenav.active {
+    left: 0;
+  }
+  
+  /* Close btn */
+  .sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  .burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+/* .......................................................................................... */
+
+@media(max-width:1192px){
+    h3{
+        font-size: 50px;
+    }
+}
+
+@media(min-width: 850px){
+    /* Sidenav menu */
+.sidenav {
+    visibility: hidden;
+  }
+  
+  .sidenav ul {
+    visibility: hidden;
+  }
+  
+  /* Sidenav menu links */
+  .sidenav a {
+    visibility: hidden;
+  }
+  
+  .sidenav a:hover {
+    visibility: hidden;
+  }
+  
+  /* Active class */
+  .sidenav.active {
+    visibility: hidden;
+  }
+  
+  /* Close btn */
+  .sidenav .close {
+    visibility: hidden;
+  }
+  
+  .burger-icon span {
+    visibility: hidden;
+  }
+}
+
+@media(max-width: 850px){
+ /* Sidenav menu */
+
+  .sidenav ul {
+    
+  }
+  
+  /* Sidenav menu links */
+  .sidenav a {
+    
+  }
+  
+  .sidenav a:hover {
+    
+  }
+  
+  /* Active class */
+  .sidenav.active {
+    
+  }
+  
+  /* Close btn */
+  .sidenav .close {
+    
+  }
+  
+  .burger-icon span {
+    
+  }
+}
+
+@media(max-width: 890px){
+    .menu{
+        position: fixed;
+        z-index: 10;
+        padding: 25px;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        display: flex;
+        align-content: center;
+    }
+    
+    .menu li{/* li menu */
+        padding-left: 30px;
+        display: inline-block;   
+    }
+}
+
+@media(max-width: 850px) {
+
+    .logo{/* logo dans le menu */
+        display: flex;
+        color: black;
+        margin-left: 42%;
+    }
+    .menudesktop li{/* li menu */
+        display: none;
+    }
+     /* Sidenav menu */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+  }
+  
+  .sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Sidenav menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #111;
+  }
+  
+  /* Active class */
+  .sidenav.active {
+    left: 0;
+  }
+  
+  /* Close btn */
+  .sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  .burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+}
+
+@media(max-width: 769px){
+    p{
+        font-size: 15px;
+    }
+
+    #container{
+        background-color: #ffffff;
+        height: 70rem;
+    }
+    
+    #container1{
+        
+        margin-top: 30px;
+        margin-left: 2%;
+        margin-right: 2%;
+        display: grid;
+        height: 10%;
+        background-color: #f7b85c;
+        z-index: 1;
+        margin-bottom: -150px;
+    }
+
+    #container2{
+        
+        margin-left: 2%;
+        margin-top: 5%;
+        position: absolute;
+        display: grid;
+        height: 80%;
+        width: 96%;
+        background-image: url(./images/resize2.jpg);
+        z-index: 3;
+    }
+    #container3{
+        
+        display: grid;
+        margin-top: 185%;
+        height: 50%;
+        width: 100%;
+        margin-left: 0%;
+        background-color: #db545a;
+        z-index: 2;
+    }
+    
+    #container4{
+        background-color: rgb(255, 255, 255);
+        display: inline-block;
+        z-index: 1;
+        margin-left: 57%;
+        margin-top: 100%;
+    }
+    
+    #hcontainer4{
+        color: black;
+        font-family: 'Lobster', cursive;
+    }
+}
+
+
+
